@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --purple: #6943FF;
+    --light-purple: #CCC1FF;
+    --white: #FFFFFF;
+    --black: #1F2937;
+    --grey: #273549;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+a {
+    color: var(--light-purple);
+}
+
+a:hover, a:focus {
+    color: var(--white);
+}
+
+h2 {
+    font-size: 25px;
+    color: var(--light-purple);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 285px;
+    background-color: var(--purple);
+}
+
+h1 {
+    margin-top: 5px;
+    font-size: 28px;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin-top: 10px;
+    border: 2px solid var(--light-purple);
+    border-radius: 5px;
+    width: 117px;
+    height: 83px;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 58px;
+    text-align: center;
+}
+
+input::placeholder {
+    color: var(--light-purple);
+}
+
+/* https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+    display: block;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    width: 117px;
+    height: 42px;
+    background-color: var(--white);
+    color: var(--purple);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    background-color: var(--light-purple);
+}
+
+button:active {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+section {
+    box-sizing: border-box;
+    margin: 36px auto 23px;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 500px;
+    background-color: var(--grey);
+    text-align: center;
+}
+
+footer {
+    margin-top: 36px;
+    padding: 20px;
+    background-color: var(--purple);
+    text-align: center;
+}
